@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+fieldset {
+    border: none;
+}
+legend {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+input[type="text"],input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Реєстрація</legend>
+            <label for="integerField">Ціле число (*):</label>
+            <input type="text" id="integerField" name="integerField"><br>
+          
+            <label for="floatField">Дійсне число (*):</label>
+            <input type="text" id="floatField" name="floatField"><br>
+          
+            <label for="dateField">Дата (DD.MM.YYYY) (*):</label>
+            <input type="text" id="dateField" name="dateField"><br>
+          
+            <label for="password">Пароль (*):</label>
+            <input type="password" id="password" name="password"><br>
+          
+            <label for="confirmPassword">Підтвердження паролю (*):</label>
+            <input type="password" id="confirmPassword" name="confirmPassword"><br>
+          
+            <button type="submit" id="registr">Зареєструватися</button>
+        </fieldset>
+    </form>
+    <button onclick="window.location.href='index.html'">main file</button>
+      
+     <script src="registration.js"></script>
+</body>
+</html>
